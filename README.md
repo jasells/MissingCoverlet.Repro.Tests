@@ -9,7 +9,7 @@ Notice that
 2) Even if other tests are added to the test project `MissingCoverlet.Repro.Tests`, NO tests will be seen by coverlet (or at least, no coverage data is collected)
 3) If line 32 in `Subscriber.cs` is removed, coverlet sees coverage data from `MissingCoverlet.Repro.Tests.SubscriberTests.NoCoverage()` see line:  https://github.com/jasells/MissingCoverlet.Repro.Tests/blob/9621ea362e31d4a18198018484455704d64c6fe3/MissingCoverlet.Repro/Subscriber.cs#L32
 
-Test log:
+Test log from local run, but a pipeline/msbuild result is the same:
 
 ```
 Fine Code Coverage : ================================== START ==================================
