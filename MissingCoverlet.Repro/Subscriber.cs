@@ -28,6 +28,7 @@ namespace MissingCoverlet.Repro
 
             _poller = _poller ?? new NetMQPoller();
 
+            // **NOTE: comment out the following line to un-hide code coverage results for MissingCoverlet.Repro.Tests.SubscriberTests.NoCoverage() test
             if (!_poller.IsRunning) { _poller.RunAsync(); }
 
             _poller.Add(_sub);
